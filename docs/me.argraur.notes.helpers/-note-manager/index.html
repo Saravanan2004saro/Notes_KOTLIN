@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NoteManager - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">me.argraur.notes.helpers</a>&nbsp;/&nbsp;<a href="./index.html">NoteManager</a><br/>
+<br/>
+<h1>NoteManager</h1>
+<code><span class="keyword">class </span><span class="identifier">NoteManager</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../me.argraur.notes.interfaces/-note-observer-manager/index.html"><span class="identifier">NoteObserverManager</span></a><span class="symbol">, </span><a href="../../me.argraur.notes.observers/-note-action-observer/index.html"><span class="identifier">NoteActionObserver</span></a></code>
+<p>Manages Notes and NoteObservers</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Creates empty NoteManager object, updates notes and notifies observers</p>
+<code><span class="identifier">NoteManager</span><span class="symbol">(</span><span class="identifier" id="me.argraur.notes.helpers.NoteManager$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-notes.html">getNotes</a></h4>
+</td>
+<td>
+<p>Retrieves all notes from database
+Creates array of Note types based on title, value, color and creation time
+If current notes array doesn't match new one, update current and notify observers</p>
+<code><span class="keyword">fun </span><span class="identifier">getNotes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="notify-observer.html">notifyObserver</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">notifyObserver</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-action.html">onAction</a></h4>
+</td>
+<td>
+<p>Called when action request was created</p>
+<code><span class="keyword">fun </span><span class="identifier">onAction</span><span class="symbol">(</span><span class="identifier" id="me.argraur.notes.helpers.NoteManager$onAction(me.argraur.notes.entities.Note, me.argraur.notes.enums.Action)/note">note</span><span class="symbol">:</span>&nbsp;<a href="../../me.argraur.notes.entities/-note/index.html"><span class="identifier">Note</span></a><span class="symbol">, </span><span class="identifier" id="me.argraur.notes.helpers.NoteManager$onAction(me.argraur.notes.entities.Note, me.argraur.notes.enums.Action)/action">action</span><span class="symbol">:</span>&nbsp;<a href="../../me.argraur.notes.enums/-action/index.html"><span class="identifier">Action</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="register-observer.html">registerObserver</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">registerObserver</span><span class="symbol">(</span><span class="identifier" id="me.argraur.notes.helpers.NoteManager$registerObserver(me.argraur.notes.observers.NoteObserver)/observer">observer</span><span class="symbol">:</span>&nbsp;<a href="../../me.argraur.notes.observers/-note-observer/index.html"><span class="identifier">NoteObserver</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-observer.html">removeObserver</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeObserver</span><span class="symbol">(</span><span class="identifier" id="me.argraur.notes.helpers.NoteManager$removeObserver(me.argraur.notes.observers.NoteObserver)/observer">observer</span><span class="symbol">:</span>&nbsp;<a href="../../me.argraur.notes.observers/-note-observer/index.html"><span class="identifier">NoteObserver</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-instance.html">getInstance</a></h4>
+</td>
+<td>
+<p>Creates one and only instance of NoteManager</p>
+<code><span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="identifier" id="me.argraur.notes.helpers.NoteManager.Companion$getInstance(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">NoteManager</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

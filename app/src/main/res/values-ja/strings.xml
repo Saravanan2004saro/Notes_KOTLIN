@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ノート</string>
+    <string name="nothing">ここにはまだ何もない！</string>
+    <string name="title_input">タイトル</string>
+    <string name="value_input">ノート</string>
+    <string name="new_note">新しいノート</string>
+    <string name="edit_note">編集</string>
+    <string name="snackbar_add">Note added</string>
+    <string name="snackbar_delete">Note deleted</string>
+    <string name="snackbar_undo">Undo</string>
+    <string name="snackbar_restore">Note restored</string>
+</resources>
