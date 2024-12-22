@@ -61,25 +61,3 @@ Windows:
 * [Kotlin](https://kotlinlang.org/) - Official programming language for native Android apps
 * [Google Material Design Components](https://material.io/develop/android/docs/getting-started/) 
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-
-## Translating
-
-Visit [Crowdin Project page](https://crowdin.com/project/meargraurnotes) if you want to help translating the app :)
-
-## Versioning
-
-We use simple major-only versioning in Japanese (OwO) (e.g. versionCode = 1, then version is ichi, versionCode = 2, then version is ni and etc.)
-
-## Authors
-
-* **Arseniy Graur** - *Project creator* - [argraur](https://github.com/argraur)
-
-See also the list of [contributors](https://github.com/argraur/Notes/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
